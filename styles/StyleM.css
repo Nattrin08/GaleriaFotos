@@ -9,7 +9,7 @@ body{
 }
 
 .header{
-  background-color: #d494e7 ;
+  background-color: #d5d2d6 ;
   height: 100px;
   text-align: center;
 }
@@ -17,24 +17,58 @@ body{
 
 .container {
   display: grid;
-  grid-template-columns: 200px 200px 200px 200px;
-  grid-template-rows:200px 200px 200px 200px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2px;
+  grid-auto-rows: 100px;
+  grid-auto-flow: row dense;
 }
 
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*naruto-kurama*/
 .box1 {
-  grid-area: 1 / 1 / 2 / 3;
+  grid-column: 1 / span 2;
+  grid-row: 1 /  span 2;
 }
 
+/*madar1*/
 .box5 {
-grid-column-start: 1;
-grid-column-end: 3;
-grid-row-start: 2;
-grid-row-end: 5;
+  grid-column: 1 / span 1;
+  grid-row: 3 /  span 5;
 }
+
+/*sanin*/
+.box10 {
+grid-column: 2 / span 1;
+grid-row: 3 / span 6;
+}
+
+/*tsunade*/
+.box3 { 
+grid-column: 3 / span 1;
+grid-row: 1 / span 3;
+}
+
+/*itachi*/
+.box4 {
+  grid-column: 3 / span 1;
+  grid-row: 4 / span 4;
+  
+}
+
+.box16 {
+  grid-column: 4 / span 1;
+  grid-row: 4 / span 5;
+}
+
 
 footer {
   padding-bottom: 5%;
-  background-color:#d494e7;
+  background-color:#bdb9be;
   color: rgb(0, 0, 0);
   text-align: center;
 }
