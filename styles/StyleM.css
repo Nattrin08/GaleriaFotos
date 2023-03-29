@@ -50,21 +50,33 @@ grid-row: 3 / span 6;
 /*tsunade*/
 .box3 { 
 grid-column: 3 / span 1;
-grid-row: 1 / span 3;
+grid-row: 1 / span 4;
 }
 
 /*itachi*/
 .box4 {
   grid-column: 3 / span 1;
-  grid-row: 4 / span 4;
+  grid-row: 5 / span 5;
   
 }
 
+/*Sasuke*/
 .box16 {
   grid-column: 4 / span 1;
-  grid-row: 4 / span 5;
+  grid-row: 1 / span 5;
 }
 
+/*Jiraiya*/
+.box9 {
+grid-column: 4 / span 1;
+grid-row: 6 / span 5;
+}
+
+/*Sakura*/
+.box6 {
+  grid-column: 1 / span 1;
+  grid-row: 8 /  span 3;
+  }
 
 footer {
   padding-bottom: 5%;
